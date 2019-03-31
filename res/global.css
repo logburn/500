@@ -1,0 +1,64 @@
+/* Defining vars */
+:root {
+    
+  /* ----------- COLORS ----------- */
+  
+  /* The two dark colors, lighter one second */
+  --main-dark-color: #151515;
+  --main-back-color: #3a3a3a;
+  
+  /*The orange-ish pink color*/
+  --main-theme-color: #f66e50;
+  
+  /* Text color, etc */
+  --main-light-color: #dfdfdf;
+  
+  
+  /* ----------- OTHERS -----------  */
+  --border-radius: 0.2em;
+}
+
+body{
+  font-family: sans-serif;
+  margin: 0;
+  background-color: var(--main-dark-color);
+  color: var(--main-light-color);
+}
+a{
+    color: var(--main-theme-color);
+}
+button{
+    margin-top: 1em;
+    background-color: var(--main-theme-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+button[disabled]{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+.hoverColor{
+    color: var(--main-back-color);
+    text-decoration: none;
+}
+.hoverColor:hover{
+    color: var(--main-theme-color);
+}
+
+/* Top bar */
+#top{
+    display: grid;
+    grid-template-columns: 5fr repeat(3, 1fr);
+    background-color: var(--main-theme-color);
+}
+.topLink{
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.7em 0;
+}
